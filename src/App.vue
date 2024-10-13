@@ -1,21 +1,14 @@
 <script setup>
-     let name = "Muhammad Nur"
-     let dreamJob = "Backend-Dev"
+import HeaderComponent from './components/HeaderComponent.vue';
+import TheWelcome from './components/TheWelcome.vue';
+
+     
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/image.jpeg" width="150" height="125" />
-
-    <div class="wrapper">
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-      </nav>
-      <h1>{{ name }}</h1>
-      <p>I aspire to be a {{ dreamJob }}.</p>
-    </div>
+    <img alt="Logo" class="logo" src="./assets/image.jpeg" width="150" height="125" />
+    <HeaderComponent />
   </header>
 
   <main>
@@ -36,6 +29,14 @@ header {
   height: auto;
   transition: filter 0.3s ease-in-out;
 }
+
+.name {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+
 
 @media (min-width: 1024px) {
   header {
